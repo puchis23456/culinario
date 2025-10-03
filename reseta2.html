@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tacos</title>
+    <link rel="stylesheet" href="hola.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        #contenido-principal {
+            animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+
+        a {
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TAQUERIA EL CHATO</h1>
+        <p>tacos muy buenos y ricos</p>
+      <a href="../culinario/index.html">regresar</a>
+    </header>
+
+    <section id="contenido-principal">
+      <h4>
+        Ingredientes<br>
+        2 a 3 aguacates maduros<br>
+        1 limón o lima (su jugo)<br>
+        ½ cebolla blanca o morada picada finamente<br>
+        1 jitomate o tomate pequeño, picado en cubitos<br>
+        Cilantro fresco al gusto, picado<br>
+        Sal al gusto<br>
+        Opcional: chile serrano picado para un toque picante<br><br>
+
+        Preparación<br>
+        Abrir y machacar los aguacates: Corta los aguacates por la mitad, retira el hueso y saca la pulpa. Machaca con un tenedor hasta obtener la textura deseada, cremosa o con trozos pequeños.<br>
+        Agregar limón: Vierte el jugo de limón o lima sobre el aguacate para darle sabor y ayudar a que no se oxide rápidamente.<br>
+        Incorporar los vegetales: Añade la cebolla, el jitomate y el cilantro picados. Mezcla suavemente para que se integren.<br>
+        Condimentar: Agrega sal al gusto y, si deseas, el chile picado para un toque picante.<br>
+        Servir inmediatamente: Para mantenerlo fresco y evitar que se ponga negro, guarda el guacamole en un recipiente hermético y presiona film transparente sobre su superficie si no se va a consumir al instante
+      </h4>
+      <div class="galeria">
+          <img src="guaca.webp" alt="Imagen 1" width="190">
+
+      </div>
+    </section>
+
+    <footer>
+        <p>©jose armnado morales cruz</p>
+    </footer>
+
+</body>
+</html>

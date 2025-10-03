@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tacos</title>
+    <link rel="stylesheet" href="hola.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        #contenido-principal {
+            animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+        a {
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RESETA DE LASAÑA</h1>
+        <p>la reseta mas rica de todas</p>
+        <a href="../culinario/index.html">regresar</a>
+    </header>
+
+    <section id="contenido-principal">
+      <h4>
+        Para preparar sushi casero, sigue estos pasos sencillos:
+        <br>
+1.Cocina el arroz especial para sushi y enfriarlo con un abanico.
+<<br>
+2.Aliña el arroz con vinagre, azúcar y sal.
+<br>
+3.Corta el pescado en tiras finas y colócalas en una hoja de alga nori.
+<br>
+4.Extiende el arroz sobre el pescado y añade ingredientes como pepino y aguacate.
+<br>
+5.Enrolla la hoja de alga y corta en porciones para servir.
+<br>
+Recuerda que el sushi se puede rellenar con lo que desees, como mariscos, carne, pollo, verduras, frutas, tofu, etc.
+      </h4>
+      <div class="galeria">
+          <img src="23.jpg" alt="Imagen 1" width="190">
+
+      </div>
+    </section>
+
+    <footer>
+        <p>©jose armnado morales cruz</p>
+    </footer>
+</body>
+</html>

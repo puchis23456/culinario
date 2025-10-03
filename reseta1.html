@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tacos</title>
+    <link rel="stylesheet" href="hola.css">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        body {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        #contenido-principal {
+            animation: fadeIn 1s ease-in-out 0.5s;
+        }
+
+        a {
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RESETA DE LASAÑA</h1>
+        <p>la reseta mas rica de todas</p>
+        <a href="../culinario/index.html">regresar</a>
+    </header>
+
+    <section id="contenido-principal">
+      <h4>
+        Receta de lasaña tradicional casera
+        Para preparar una lasaña tradicional casera, sigue estos pasos:
+        <br>
+        1. Preparar la salsa: Mezcla cebolla, ajo, carne, jitomate, puré, hoja de laurel y caldo de res.
+        <br>
+        2. Cocina hasta que la carne y las verduras estén cocidas.
+        <br>
+        Cocinar las láminas de pasta: Cuela las láminas de pasta en agua hirviendo con sal por 5 minutos.
+        <br>
+        3. Montar la lasaña: En una fuente para horno, coloca una capa de salsa, luego láminas de pasta, carne, quesos, más salsa y queso.
+        <br>
+        Hornear: Hornea durante 30-35 minutos o hasta que el queso esté dorado y burbujeante.
+      </h4>
+      <div class="galeria">
+          <img src="lasa.webp" alt="Imagen 1" width="190">
+
+      </div>
+    </section>
+
+    <footer>
+        <p>©jose armnado morales cruz</p>
+    </footer>
+</body>
+</html>

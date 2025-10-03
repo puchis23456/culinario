@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Culinario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MI BLOG CULINARIO</h1>
+                <p>Recetas caseras con amor</p>
+            </div>
+            <nav class="nav-menu">
+                <ul class="menu-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#categorias">Categorías</a></li>
+                    <li><a href="#sobre-mi">Sobre Mi</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <img id="dark-mode-toggle" src="000.jpg" alt="Alternar Modo Oscuro">
+
+        <script>
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            let isDarkMode = false;
+
+            darkModeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                isDarkMode = !isDarkMode;
+
+                // Cambiar la imagen
+                if (isDarkMode) {
+                    darkModeToggle.src = "000.jpg";
+                    darkModeToggle.alt = "Activar Modo Claro";
+                } else {
+                    darkModeToggle.src = "000.jpg";
+                    darkModeToggle.alt = "Alternar Modo Oscuro";
+                }
+            });
+        </script>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Descubre el Arte de la Cocina</h1>
+            <p>Recetas tradicionales, técnicas modernas y sabores inolvidables</p>
+            <button class="cta-button">Explorar Recetas</button>
+        </div>
+    </section>
+
+    <section class="featured-recipes" id="recetas">
+        <h2>Recetas Destacadas</h2>
+        <div class="recipes-grid">
+            <!-- Receta 1 -->
+            <article class="recipe-card">
+                <div class="recipe-image">
+                    <img src="lasa.webp" alt="Lasana tradicional italiana">
+                    <span class="recipe-badge"> Popular</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Lasana de la Abuela</h3>
+                    <p>Una receta tradicional italiana con capas de pasta, carne y bechamel.</p>
+                    <div class="recipe-meta">
+                        <span> 90 min</span>
+                        <span> Media</span>
+                        <span> 6 personas</span>
+                    </div>
+                    <a href="reseta1.html" class="recipe-button">Ver Receta</a>
+                </div>
+            </article>
+
+            <!-- Receta 2 -->
+            <article class="recipe-card">
+                <div class="recipe-image">
+                    <img src="guaca.webp" alt="Guacamole mexicano">
+                    <span class="recipe-badge"> Picante</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Guacamole Mexicano</h3>
+                    <p>Autentico guacamole con aguacates maduros y un toque de chile.</p>
+                    <div class="recipe-meta">
+                        <span> 15 min</span>
+                        <span> Facil</span>
+                        <span> 4 personas</span>
+                    </div>
+                    <a href="reseta2.html" class="recipe-button">Ver Receta</a>
+                </div>
+            </article>
+
+            <!-- Receta 3 -->
+            <article class="recipe-card">
+                <div class="recipe-image">
+                    <img src="susi.jpg" alt="sushi casero">
+                    <span class="recipe-badge"> Saludable</span>
+                </div>
+                <div class="recipe-content">
+                    <h3>Sushi Casero</h3>
+                    <p>Aprende a preparar sushi perfecto en casa con ingredientes frescos.</p>
+                    <div class="recipe-meta">
+                        <span> 60 min</span>
+                        <span> Dificil</span>
+                        <span> 2 personas</span>
+                    </div>
+                    <a href="reseta3.html" class="recipe-button">Ver Receta</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="categories" id="categorias">
+        <h2>Categorias</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon"> </div>
+                <h3>Pastas</h3>
+                <p>15 recetas</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon"> </div>
+                <h3>Ensaladas</h3>
+                <p>12 recetas</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon"> </div>
+                <h3>Postres</h3>
+                <p>20 recetas</p>
+            </div>
+            <div class="category-card">
+                <div class="category-icon"> </div>
+                <h3>Vegetariano</h3>
+                <p>18 recetas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="sobre-mi">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Sobre Mi</h2>
+                <p>¡Hola! Soy jose armando morales cruz, un apasionado de la cocina desde que tengo memoria. Cre
+                    ci viendo a mi abuela preparar platillos increibles y ahora quiero compartir ese conocimiento
+                    contigo.</p>
+                <p>Mi mision es demostrar que cocinar puede ser divertido, creativo y accesible pa
+                    ra todos.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="23.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Suscribete al Newsletter</h2>
+            <p>Recibe nuevas recetas cada semana</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu email aqui..." required>
+                <button type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer" id="contacto">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Q Mi Blog Culinario</h3>
+                <p>Compartiendo recetas desde 2024</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rapidos</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#recetas">Recetas</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#sobre-mi">Sobre Mi</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>hola@miblog.com</p>
+                <p> +34 123 56 789</p>
+                <p> Tu Ciudad</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Mi Blog Culinario. Creado por jose armando morales cruz.</p>
+        </div>
+    </footer>
+</body>
+</html>
